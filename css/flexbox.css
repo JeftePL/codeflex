@@ -1,0 +1,130 @@
+.header .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav {
+    display: flex;
+}
+
+.header-title a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.main-courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.main-courses-link {
+    width: calc(25% - 12px);
+}
+
+.main-about .container {
+    display: flex;
+    gap: 16px;
+}
+
+.main-about-advantages {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+.main-about-advantages-list {
+    flex-grow: 1;
+}
+
+.main-about-text {
+    flex-grow: 1;
+    flex-shrink: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-contact .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-contact-form-fieldset {
+    display: flex;
+}
+
+.footer-navmap-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 250px;
+}
+
+@media only screen and (max-width: 991px) {
+    .main-courses-link {
+        width: calc(33% - 9px);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header-nav {
+        flex-direction: column;
+    }
+
+    .header .container {
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+
+    .main-courses {
+        flex-direction: column;
+    }
+
+    .main-courses-link {
+        width: 100%;
+    }
+
+
+    .main-about .container {
+        flex-direction: column;
+    }
+
+    .main-about-text {
+        margin: 0 auto;
+    }
+
+    .footer-navmap-list {
+        height: auto;
+    }
+
+    .footer-contact .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-contact-form {
+        width: 100%;
+    }
+
+    .footer-patrocinadores-list {
+        margin: 0;
+        width: 100%;
+    }
+
+    .footer-contact-form-fieldset {
+        justify-content: center;
+    }
+
+    .header-nav-link-app {
+        order: -1;
+    }
+}
